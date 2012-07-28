@@ -37,7 +37,7 @@ static unsigned int * nesBitmap;
 
 #define JOY_A           1
 #define JOY_B           2
-#define JOY_SELECT      4
+#define JOY_BACK      4
 #define JOY_START       8
 #define JOY_UP          0x10
 #define JOY_DOWN        0x20
@@ -150,8 +150,8 @@ void update_input() {
             if (Gamepads[dwUser].start)
                 pad[dwUser] |= JOY_START;
 
-            if (Gamepads[dwUser].select)
-                pad[dwUser] |= JOY_SELECT;
+            if (Gamepads[dwUser].back)
+                pad[dwUser] |= JOY_BACK;
         }
     }
     //-------------------------------------------------------------------------------------
